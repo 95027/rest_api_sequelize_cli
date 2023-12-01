@@ -4,7 +4,6 @@ const app =  (req, res) => {
         message : 'this is from api'});
 };
 
-
 module.exports = {
-    app,
+    app,  
 }
