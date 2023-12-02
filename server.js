@@ -10,10 +10,12 @@ app.use(bodyParser.json());
 const appRoutes = require('./routes/appRoutes');
 const employeeRoutes = require('./routes/employeeRoutes');
 const userRoutes = require('./routes/userRoutes');
+const postRoutes = require('./routes/postRoutes');
 
 app.use('/', appRoutes);
 app.use('/api', employeeRoutes);
 app.use('/api', userRoutes);
+app.use('/api', postRoutes);
 
 
 // custom middleware for error handling

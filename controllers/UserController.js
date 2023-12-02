@@ -1,10 +1,10 @@
-const { User, Profile } = require("../models");
+const { User, Profile, Post } = require("../models");
 
 // Find all users with associated profile
 const getAllUsers = async (req, res, next) => {
   try {
     const allUsers = await User.findAll({
-      include: [{ model: Profile, as: "profile" }],
+      include: [{ model: Profile, as: "profile" }, {model: Post, as: 'post'}],
     });
     res.json(allUsers);
   } catch (error) {

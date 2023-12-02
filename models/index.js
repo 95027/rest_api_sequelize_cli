@@ -42,8 +42,8 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 // for altering the model and migrations
-/* async () => {
+/*  async () => {
   await sequelize.sync({alter : true});
-}  */
+}; */
 
 module.exports = db;
