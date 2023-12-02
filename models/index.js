@@ -37,12 +37,13 @@ Object.keys(db).forEach(modelName => {
   }
 });
 
+
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 // for altering the model and migrations
 /* async () => {
   await sequelize.sync({alter : true});
-} */
+}  */
 
 module.exports = db;

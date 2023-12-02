@@ -9,9 +9,11 @@ app.use(bodyParser.json());
 // routes
 const appRoutes = require('./routes/appRoutes');
 const employeeRoutes = require('./routes/employeeRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 app.use('/', appRoutes);
 app.use('/api', employeeRoutes);
+app.use('/api', userRoutes);
 
 
 // custom middleware for error handling
